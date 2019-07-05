@@ -16,6 +16,8 @@
 	padding: 80px;
 	&-title{
 		display: block;
+		width: 730px;
+		margin: -3px 0 0 0;
 		box-sizing: border-box;
 		font-size: 30px;
   	font-family: "Raleway";
@@ -26,6 +28,8 @@
 	}
 	&-txt{
 		display: block;
+		width: 730px;
+		margin: 15px 0 0 0;
 		box-sizing: border-box;
 		font-size: 16px;
   	font-family: "Montserrat";
@@ -36,6 +40,9 @@
 	&-cram{
 		box-sizing: border-box;
 		display: flex;
+		flex-wrap: wrap;
+		padding:0;
+		margin: 28px 0 0 0;
 		&-item{
 			margin: 5px;
 			min-width: 70px;
@@ -49,7 +56,7 @@
 				box-sizing:border-box;
 				text-decoration: none;
 				display: block;
-				padding: 10px 20px 10px 20px;
+				padding: 5px 20px 5px 20px;
 				width: 100%;
 				height: 100%;
 				font-size: 14px;
@@ -65,19 +72,27 @@
 			&:hover &-link{
 				color:#fff;
 			}
+			&:active{
+				background-color: @clr-btn-hover;
+				border-color: @clr-btn-hover;
+			}
+			&:active &-link{
+				color:#fff;
+			}
 		}
 	}
 	&-box{
 		box-sizing: border-box;
 		display: flex;
 		flex-wrap: wrap;
+		margin: 34px 0 0 0;
 
 		&-item{
 			box-sizing: border-box;
 			margin: 15px;
-			width: 360px;
+			width: 370px;
 			min-height: 335px;
-			outline: 1px solid red;
+			/*outline: 1px solid red;*/
 		}
 		&-item:nth-child(1),
 		&-item:nth-child(2),
@@ -100,7 +115,7 @@
 	&-btn{
 		box-sizing:border-box;
 		width: 170px;
-		margin: 50px 0 0 0;
+		margin: 44px 0 0 0;
 		min-height: 54px;
 		border:none;
 		text-decoration: none;
@@ -139,5 +154,132 @@
 	}
 
 }
+.latest-project-box-item{
+	&-figure{
+		margin: 0;
+		&-img{
+			display: block;
+			box-sizing:border-box;
+			width: 370px;
+			height: 235px;
+		}
+		&-txt{
+			display: block;
+			box-sizing:border-box;
+			width: 100%;
+			min-height: 100px;
+			padding:24px;
+			position: relative;
+			background-color:#fbfaf8;
+			&:before{
+				content: "";
+    		display: block;
+    		position: absolute;
+    		top: -29px;
+    		left: 21px;
+   		 	border: 20px solid transparent;
+    		border-bottom: 10px solid #fbfaf8;
+			}
+			&-title{
+				display: block;
+				margin: 3px 0 0 0;
+				box-sizing:border-box;
+				font-size: 20px;
+  			font-family: "Raleway";
+  			color: rgb(199, 178, 153);
+  			line-height: 1.2;
+  			font-weight: 500;
+  			text-align: left;
+			}
+			&-text{
+				display: block;
+				box-sizing:border-box;
+				margin: 3px 0 0 0;
+  			font-family: "Montserrat";
+  			color: rgb(209, 209, 209);
+  			line-height: 1.429;
+  			text-align: left;
+			}
+		}
+	}
+}
+
+.latest-project-box-item{
+	position:relative;
+	&-shadow{
+		display: none;
+		box-sizing:border-box;
+		position:absolute;
+		width: 100%;
+		height:100%;
+		top:0;
+		left: 0;
+		z-index: 1;
+		&:before{
+			content:"";
+			background-image: -webkit-linear-gradient(bottom, rgba(33,27,25,0.5) 0%, rgba(78,52,39,0.5) 100%);
+			background-image: -o-linear-gradient(bottom, rgba(33,27,25,0.5) 0%, rgba(78,52,39,0.5) 100%);
+			background-image: linear-gradient(to top, rgba(33,27,25,0.5) 0%, rgba(78,52,39,0.5) 100%);
+			position:absolute;
+			width: 370px;
+			height: 235px;
+			top:0;
+			left: 0;
+		}
+		&-link{
+			display: block;
+			box-sizing:border-box;
+			width: 26px;
+			height: 26px;
+			box-sizing:border-box;
+			background-image: url("../img/link.svg");
+			background-repeat: no-repeat;
+			background-size:cover;
+			position:absolute;
+			top:106px;
+			left: 144px;
+			&:hover{
+				background-image: url("../img/link_hover.svg");
+			}
+			&:active{
+				background-image: url("../img/link_active.svg");
+			}
+		}
+		&-search{
+			display: block;
+			box-sizing:border-box;
+			width: 26px;
+			height: 25px;
+			box-sizing:border-box;
+			background-image: url("../img/lupa.svg");
+			background-repeat: no-repeat;
+			background-size:cover;
+			position:absolute;
+			top:106px;
+			left: 198px;
+			&:hover{
+				background-image: url("../img/lupa_hover.svg");
+			}
+			&:active{
+				background-image: url("../img/lupa_active.svg");
+			}
+		}
+	}
+	&:hover &-shadow{
+		display: block;
+	}
+	&:hover &-figure-txt{
+		background-color: #362f2d;
+		&-title{
+			color:#fff;
+		}
+		&-text{
+			color:#c7b299;
+		}
+	}
+}
+
+
+
 
 
