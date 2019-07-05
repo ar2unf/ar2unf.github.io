@@ -1,13 +1,14 @@
 @bgc-header: #555556;
 @min-height: 1024px;
 @bg-image:"../img/bg_photo.jpg";
-@widthgrid:1170px;
+@widthgrid-header:1170px;
 @clink_hover:#c7b299;
 @clink_active:#736357;
 @clr_font: #FFF;
 @clr-btn:#998675;
 @clr-btn-hover:#736356;
 @clr-btn-active:#000;
+// /***********************
 
 .main-header{
 	width: 100%;
@@ -31,7 +32,7 @@
 /*блок логотипа*/
 .main-header-wrap{
 	box-sizing:border-box;
-	width: @widthgrid;
+	width: @widthgrid-header;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -104,6 +105,7 @@
   	}
 	}
 }
+
 /************/
 /*кнопки поиска и корзина*/
 .main-header-wrap-btn-cart{
@@ -114,11 +116,16 @@
 	background:none;
 	border:none;
 	background-image: url("../img/cart_ico.svg");
-	background-repeat: no-repeat;
 	background-size:cover;
 	margin: 0 0 0 36px;
 	position:absolute;
 	left: 1065px;
+	&:hover{
+		background-image: url("../img/cart_ico_hover.svg");
+	}
+	&:active{
+		background-image: url("../img/cart_ico_active.svg");
+	}
 }
 .main-header-wrap-search[type="search"]{
 	/* позишн абсолют?*/
@@ -131,12 +138,24 @@
 	background-repeat:no-repeat;
 	position:absolute;
 	left: 1147px;
+	border: 3px solid transparent;
+	border-radius: 5px;
 	&:focus{
 		position:absolute;
+		box-sizing:border-box;
 		left: 1170px;
 		width: 200px;
 		transition: width 1s ease-out;
 		background-position: right;
+		border: 3px solid @clink_hover;
+		outline: none;
+
+	}
+	&:hover{
+		background-image: url("../img/search_ico_hover.svg");
+	}
+	&:active{
+		background-image: url("../img/search_ico_active.svg");
 	}
 }
 /************/

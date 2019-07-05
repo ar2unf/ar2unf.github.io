@@ -102,11 +102,16 @@
   background: none;
   border: none;
   background-image: url("../img/cart_ico.svg");
-  background-repeat: no-repeat;
   background-size: cover;
   margin: 0 0 0 36px;
   position: absolute;
   left: 1065px;
+}
+.main-header-wrap-btn-cart:hover {
+  background-image: url("../img/cart_ico_hover.svg");
+}
+.main-header-wrap-btn-cart:active {
+  background-image: url("../img/cart_ico_active.svg");
 }
 .main-header-wrap-search[type="search"] {
   /* позишн абсолют?*/
@@ -119,13 +124,24 @@
   background-repeat: no-repeat;
   position: absolute;
   left: 1147px;
+  border: 3px solid transparent;
+  border-radius: 5px;
 }
 .main-header-wrap-search[type="search"]:focus {
   position: absolute;
+  box-sizing: border-box;
   left: 1170px;
   width: 200px;
   transition: width 1s ease-out;
   background-position: right;
+  border: 3px solid #c7b299;
+  outline: none;
+}
+.main-header-wrap-search[type="search"]:hover {
+  background-image: url("../img/search_ico_hover.svg");
+}
+.main-header-wrap-search[type="search"]:active {
+  background-image: url("../img/search_ico_active.svg");
 }
 /************/
 /*текстовый слайдер*/

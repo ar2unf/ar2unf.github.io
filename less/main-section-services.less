@@ -1,7 +1,14 @@
-@widthgrid:1170px;
+@widthgridservice:1170px;
+@clink_hover:#c7b299;
+@clink_active:#736357;
+@clr_font: #FFF;
+@clr-btn:#998675;
+@clr-btn-hover:#736356;
+@clr-btn-active:#000;
+// /***********************
 
 .services-wrap{
-	width: @widthgrid;
+	width: @widthgridservice;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -30,14 +37,14 @@
 			align-items: center;
 			&-ico{
 				box-sizing: border-box;
-				width: 64px;
-				height: 56px;
+				width: 52px;
+				height: 52px;
 				fill: #555555;
-
 			}
 			&-title{
 				display: block;
 				box-sizing: border-box;
+				margin: 12px 0 0 0;
   			font-size: 22px;
   			font-family: "Raleway";
  			 	font-weight: 600;
@@ -58,23 +65,38 @@
 			&:after{
 				content: "";
 				display: block;
+				margin: 13px 0 0 0;
 				width: 70px;
 				height: 3px;
 				background-color: #f1eee9;
 			}
 			&:hover &-title{
-				color: rgb(199, 178, 153);
+				color: @clink_hover;
+				margin: 9px 0 0 0;
 			}
 			&:hover &-ico{
-				fill: rgb(199, 178, 153);
+				margin: 3px 0 0 0;
+				fill:  @clink_hover;
 			}
 			&:hover:after{
-				background-color: #c7b299;
+				background-color: @clink_hover;
 			}
-			
-
+			&:active &-title{
+				color: @clink_active;
+			}
+			&:active &-ico{
+				fill: @clink_active;
+			}
+			&:active:after{
+				background-color: @clink_active;
+			}
 		}
 
+	}
+	&:after{
+		content: "";
+		width: 100%;
+		clear: both;
 	}
 }
 
