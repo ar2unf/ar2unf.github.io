@@ -196,6 +196,7 @@
   margin: 0 0 0 36px;
 }
 .main-header-wrap-search[type="search"] {
+  /* позишн абсолют?*/
   width: 24px;
   height: 24px;
   background: none;
