@@ -36,6 +36,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items:center;
+	position:relative;
 	&-logo{
 		display: flex;
   	justify-content: space-between;
@@ -77,6 +78,7 @@
 /* меню сайта*/
 .main-header-wrap-nav{
 	list-style-type: none;
+	margin: 0 130px 0 0 ;
 	padding:0;
 	min-width: 640px;
 	/*min-height: 56px;*/
@@ -115,6 +117,8 @@
 	background-repeat: no-repeat;
 	background-size:cover;
 	margin: 0 0 0 36px;
+	position:absolute;
+	left: 1065px;
 }
 .main-header-wrap-search[type="search"]{
 	/* позишн абсолют?*/
@@ -125,7 +129,11 @@
 	background-image: url("../img/search_ico.svg");
 	background-size:contain;
 	background-repeat:no-repeat;
+	position:absolute;
+	left: 1147px;
 	&:focus{
+		position:absolute;
+		left: 1170px;
 		width: 200px;
 		transition: width 1s ease-out;
 		background-position: right;
