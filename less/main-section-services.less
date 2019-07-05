@@ -28,9 +28,45 @@
 			&-ico{
 				width: 64px;
 				height: 56px;
+				fill: #555555;
 
 			}
+			&-title{
+  			font-size: 22px;
+  			font-family: "Raleway";
+ 			 	font-weight: 600;
+ 				color: rgb(85, 85, 85);
+  			line-height: 1.2;
+ 			 	text-align: center;
+
+			}
+			&-txt{
+  			font-size: 14px;
+  			font-family: "Montserrat";
+  			color: rgb(140, 140, 140);
+  			line-height: 1.714;
+  			text-align: center;
+			}
+			&:after{
+				content: "";
+				display: block;
+				width: 70px;
+				height: 3px;
+				background-color: #f1eee9;
+			}
+			&:hover &-title{
+				color: rgb(199, 178, 153);
+			}
+			&:hover &-ico{
+				fill: rgb(199, 178, 153);
+			}
+			&:hover:after{
+				background-color: #c7b299;
+			}
+			
+
 		}
 
 	}
 }
+
