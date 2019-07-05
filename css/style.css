@@ -322,23 +322,35 @@
   content: "";
   width: 52px;
   height: 52px;
-  border-bottom: 2px solid #d3c1ad;
-  border-left: 2px solid #d3c1ad;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #dfff;
   transform: rotate(45deg);
   position: absolute;
   top: 387px;
   left: 122px;
 }
+.main-header-slid-arrow-back:hover:after {
+  border-color: #c7b299;
+}
+.main-header-slid-arrow-back:active:after {
+  border-color: #736357;
+}
 .main-header-slid-arrow-front:before {
   content: "";
   width: 52px;
   height: 52px;
-  border-top: 2px solid #d3c1ad;
-  border-right: 2px solid #d3c1ad;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
   transform: rotate(45deg);
   position: absolute;
   top: 387px;
-  left: 1665px;
+  right: 122px;
+}
+.main-header-slid-arrow-front:hover:before {
+  border-color: #c7b299;
+}
+.main-header-slid-arrow-front:active:before {
+  border-color: #736357;
 }
 /*пагинация для слайдера*/
 .main-header-pagination {
@@ -365,185 +377,6 @@
   background: transparent;
 }
 /************/
-/*
-.main-header{
-	box-sizing: border-box;
-	min-height: @min-height;
-	background-color:@bgc-header;
-	background-image: url(@bg-image);
-	background-size: cover;
-	
-	padding:40px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items:center;
-	
-	
-	&-link{
-		box-sizing:border-box;
-  		text-decoration: none;
-  		margin: -11px 130px 0 0;
-  		display: flex;
-  		justify-content: flex-start;
-  		
-  		&-logo{
-  			display: block;
-  			box-sizing:border-box;
-  			width: 60px;
-  			min-height: 60px;
-  		}
-
-  		&-txt{
-
-  			display: block;
-  			max-width: 200px;
-  			min-height: 60px;
-  			padding: 10px 0 10px 5px;
-  			font-size: 34px;
-  			font-family: "Raleway";
-  			color: rgb(255, 255, 255);
-  			line-height: 1.2;
-  			
-  		
-  			
-  		}
-	}
-	&-nav{
-		margin: 0;
-		display: flex;
-		list-style-type: none;
-		justify-content: space-between;
-		width: 640px;
-		min-height: 60px;
-		
-		
-		&-item{
-			display: block;
-			    padding: 19px 0 10px 0;
-			min-height: 60px;
-
-			&-link{
-				display: block;
-				min-height: 60px;
-				text-decoration: none;
-  				font-size: 14px;
-  				font-family: "Montserrat";
-  				color: rgb(255, 255, 255);
-  				line-height: 1.2;
-  				text-align: left;
-  				&:hover{
-  					color: rgb(199, 178, 153);		
-  				}
-
-
-			}
-		}
-	}
-	&-cart-link{
-		margin: -28px -25px 0 0;
-		padding: 0;
-
-	}
-	&-search-link{
-		margin: -28px 0px 0 0;
-		padding: 0;
-
-	}
-	&-slider{
-		margin: 0 0 0 0;
-		display: flex;
-		flex-direction: column;
-		align-items:center;
-		justify-content: center;
-
-
-
-		&-title-1{
-  			font-size: 36px;
-  			font-family: "Raleway";
-  			color: rgb(255, 255, 255);
-  			line-height: 1.2;
-  			font-weight: 500;
-  			text-align: center;
-		}
-		&-title-2{
-			font-size: 52px;
-  			font-family: "Raleway";
-  			color: rgb(255, 255, 255);
-  			font-weight: 800;
-  			line-height: 1.2;
-  			text-align: center;
-
-		}
-		&-txt{
-			font-size: 16px;
-  			font-family: "Montserrat";
-  			color: rgb(255, 255, 255);
-  			line-height: 1.5;
-  			text-align: center;
-
-		}
-		&-btn{
-			text-decoration: none;
-			display: block;
-			display: flex;
-			justify-content: center;
-			align-items:center;
-			background-color:#998675;
-			
-
-			border-radius: 3px;
-  			box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
-  			width: 170px;
-  			height: 53px;
-  			&:active{
-				background-color: rgb(17, 17, 17);
-  			}
-
-			&-txt{
-				font-size: 14px;
-  				font-family: "Raleway";
-  				color: rgb(255, 255, 255);
-  				font-weight: 800;
-  				text-transform: uppercase;
-  				line-height: 1.643;
-  				text-align: center;
-				
-			}
-		}
-	
-		&-radio {
-			display: block;
-			display: flex;
-  			justify-content: center;
-  			align-items: center;
-  		
-  			
-			&-link{
-				display: flex;
-				display: block;
-				height: 11px;
-				width: 11px;
-				margin: 0 10px;
-				border-radius: 50%;
-				background-color:#fff;
-				opacity: 0.502;
-				&:hover{
-					border: 2px solid #d3c1ad;
-				}
-				&:active{
-					background-color:transparent;
-					border: 2px solid #d3c1ad;
-				}
-			}	
-		}	
-	}
-	
-}	
-
-  	
-*/
 .services-wrap {
   width: 1170px;
   margin: 0 auto;
@@ -632,6 +465,7 @@
   width: 100%;
   clear: both;
 }
+/***секция реализации идей */
 .realization-idea-wrap {
   width: 1230px;
   margin: 0 auto;
@@ -680,6 +514,8 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, bottom left, bottom right;
 }
+/*****************************/
+/***** секция рекламы****/
 .promo-wrap {
   width: 1170px;
   box-sizing: border-box;
@@ -763,85 +599,4 @@
   color: #fff;
   border-bottom: 3px solid #ccc;
 }
-/*
-.Text_Boxes {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 6970px;
-  z-index: 127;
-}
-.Purchase_Now {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 6970px;
-  z-index: 126;
-}
-.Purchase_Now {
-  font-size: 14px;
-  font-family: "Raleway ExtraBold";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 1.643;
-  text-align: center;
-  position: absolute;
-  left: 1403.047px;
-  top: 2159.999px;
-  z-index: 125;
-}
-.button {
-  border-radius: 3px;
-  background-color: rgb(17, 17, 17);
-  box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
-  position: absolute;
-  left: 1376px;
-  top: 2147px;
-  width: 170px;
-  height: 50px;
-  z-index: 124;
-}
-.Txt {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 6970px;
-  z-index: 122;
-}
-.Don_t_Forget_to_Rate_the_Template__Thanks_so_much_ {
-  font-size: 18px;
-  font-family: "Montserrat";
-  color: rgb(97, 88, 85);
-  line-height: 1.2;
-  text-align: left;
-  position: absolute;
-  left: 373.797px;
-  top: 2176.9px;
-  z-index: 121;
-}
-.Waxom_Multipurpose_WordPress_Theme {
-  font-size: 28px;
-  font-family: "Raleway";
-  color: rgb(199, 178, 153);
-  line-height: 1.2;
-  text-align: left;
-  position: absolute;
-  left: 375.656px;
-  top: 2139.26px;
-  z-index: 120;
-}
-.Background {
-  background-image: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
-  background-image: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
-  background-image: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
-  position: absolute;
-  left: 0px;
-  top: 2097px;
-  width: 1920px;
-  height: 150px;
-  z-index: 118;
-}
-*/
+/***********************************/
