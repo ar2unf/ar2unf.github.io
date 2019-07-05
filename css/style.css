@@ -217,6 +217,9 @@
   left: 1147px;
   border: 3px solid transparent;
   border-radius: 5px;
+  font-family: montserrat;
+  color: #fff;
+  font-size: 14px;
 }
 .main-header-wrap-search[type="search"]:focus {
   position: absolute;
@@ -481,6 +484,7 @@
   padding: 80px;
   padding-bottom: 0;
   box-sizing: border-box;
+  background-color: #fbfaf8;
 }
 .realization-idea-title {
   display: block;
