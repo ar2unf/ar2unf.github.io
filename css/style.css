@@ -867,6 +867,11 @@
 .latest-project-box-item:hover .latest-project-box-item-figure-txt {
   background-color: #362f2d;
 }
+.latest-project-box-item:hover .latest-project-box-item-figure-txt:before {
+  border: 20px solid transparent;
+  border-bottom: 10px solid #362f2d;
+  z-index: 2;
+}
 .latest-project-box-item:hover .latest-project-box-item-figure-txt-title {
   color: #fff;
 }
