@@ -130,6 +130,7 @@
 .main-header-wrap-logo-img {
   display: block;
   fill: #ffffff;
+  /*transition: fill 500ms ease-out;*/
 }
 .main-header-wrap-logo-txt {
   display: block;
@@ -140,6 +141,7 @@
   color: #ffffff;
   line-height: 1.2;
   text-align: right;
+  /*transition: color 500ms ease-out;*/
 }
 .main-header-wrap-logo:hover .main-header-wrap-logo-img {
   fill: #c7b299;
@@ -414,6 +416,7 @@
   width: 52px;
   height: 52px;
   fill: #555555;
+  transition: fill 500ms ease;
 }
 .services-item-link-title {
   display: block;
@@ -425,6 +428,7 @@
   color: #555555;
   line-height: 1.2;
   text-align: center;
+  transition: color 500ms ease-out;
 }
 .services-item-link-txt {
   display: block;
@@ -442,6 +446,7 @@
   width: 70px;
   height: 3px;
   background-color: #f1eee9;
+  transition: background-color 500ms ease-out;
 }
 .services-item-link:hover .services-item-link-title {
   color: #c7b299;
@@ -450,6 +455,7 @@
 .services-item-link:hover .services-item-link-ico {
   margin: 3px 0 0 0;
   fill: #c7b299;
+  transition: fill 500ms ease;
 }
 .services-item-link:hover:after {
   background-color: #c7b299;
@@ -656,6 +662,7 @@
   border-color: #ebebeb;
   border-radius: 3px;
   background-color: rgba(17, 17, 17, 0);
+  transition: background-color 500ms ease-out, border 500ms ease-out, color 500ms ease-out;
 }
 .latest-project-cram-item-link {
   box-sizing: border-box;
@@ -771,6 +778,7 @@
   padding: 24px;
   position: relative;
   background-color: #fbfaf8;
+  transition: background-color 500ms ease-out;
 }
 .latest-project-box-item-figure-txt:before {
   content: "";
@@ -780,6 +788,7 @@
   left: 21px;
   border: 20px solid transparent;
   border-bottom: 10px solid #fbfaf8;
+  transition: border 500ms ease-out;
 }
 .latest-project-box-item-figure-txt-title {
   display: block;
@@ -791,6 +800,7 @@
   line-height: 1.2;
   font-weight: 500;
   text-align: left;
+  transition: color 500ms ease-out;
 }
 .latest-project-box-item-figure-txt-text {
   display: block;
@@ -800,12 +810,14 @@
   color: #d1d1d1;
   line-height: 1.429;
   text-align: left;
+  transition: color 500ms ease-out;
 }
 .latest-project-box-item {
   position: relative;
 }
 .latest-project-box-item-shadow {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   box-sizing: border-box;
   position: absolute;
   width: 100%;
@@ -813,6 +825,7 @@
   top: 0;
   left: 0;
   z-index: 1;
+  transition: opacity 500ms ease-out;
 }
 .latest-project-box-item-shadow:before {
   content: "";
@@ -836,6 +849,7 @@
   position: absolute;
   top: 106px;
   left: 144px;
+  transition: background-image 500ms ease-out;
 }
 .latest-project-box-item-shadow-link:hover {
   background-image: url("../img/link_hover.svg");
@@ -854,6 +868,7 @@
   position: absolute;
   top: 106px;
   left: 198px;
+  transition: background-image 500ms ease-out;
 }
 .latest-project-box-item-shadow-search:hover {
   background-image: url("../img/lupa_hover.svg");
@@ -862,7 +877,8 @@
   background-image: url("../img/lupa_active.svg");
 }
 .latest-project-box-item:hover .latest-project-box-item-shadow {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 .latest-project-box-item:hover .latest-project-box-item-figure-txt {
   background-color: #362f2d;

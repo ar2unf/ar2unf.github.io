@@ -35,6 +35,7 @@
 				width: 52px;
 				height: 52px;
 				fill: #555555;
+				transition: fill 500ms ease;
 			}
 			&-title{
 				display: block;
@@ -46,7 +47,7 @@
  				color: rgb(85, 85, 85);
   			line-height: 1.2;
  			 	text-align: center;
-
+ 			 	transition: color 500ms ease-out;
 			}
 			&-txt{
 				display: block;
@@ -64,6 +65,7 @@
 				width: 70px;
 				height: 3px;
 				background-color: #f1eee9;
+				transition: background-color 500ms ease-out;
 			}
 			&:hover &-title{
 				color: @clink_hover;
@@ -72,6 +74,8 @@
 			&:hover &-ico{
 				margin: 3px 0 0 0;
 				fill:  @clink_hover;
+				transition: fill 500ms ease;
+
 			}
 			&:hover:after{
 				background-color: @clink_hover;

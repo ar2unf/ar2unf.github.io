@@ -52,6 +52,9 @@
   		border-color: rgb(235, 235, 235);
   		border-radius: 3px;
   		background-color: rgba(17, 17, 17, 0);
+  		transition: background-color 500ms ease-out,
+  								border 500ms ease-out,
+  								color 500ms ease-out;
 			&-link{
 				box-sizing:border-box;
 				text-decoration: none;
@@ -171,6 +174,7 @@
 			padding:24px;
 			position: relative;
 			background-color:#fbfaf8;
+			transition: background-color 500ms ease-out;
 			&:before{
 				content: "";
     		display: block;
@@ -179,6 +183,7 @@
     		left: 21px;
    		 	border: 20px solid transparent;
     		border-bottom: 10px solid #fbfaf8;
+    		transition: border 500ms ease-out;
 			}
 			&-title{
 				display: block;
@@ -190,6 +195,7 @@
   			line-height: 1.2;
   			font-weight: 500;
   			text-align: left;
+  			transition: color 500ms ease-out;
 			}
 			&-text{
 				display: block;
@@ -199,6 +205,7 @@
   			color: rgb(209, 209, 209);
   			line-height: 1.429;
   			text-align: left;
+  			transition: color 500ms ease-out;
 			}
 		}
 	}
@@ -207,7 +214,8 @@
 .latest-project-box-item{
 	position:relative;
 	&-shadow{
-		display: none;
+		visibility: hidden;
+		opacity: 0;
 		box-sizing:border-box;
 		position:absolute;
 		width: 100%;
@@ -215,6 +223,7 @@
 		top:0;
 		left: 0;
 		z-index: 1;
+		transition: opacity 500ms ease-out;
 		&:before{
 			content:"";
 			background-image: -webkit-linear-gradient(bottom, rgba(33,27,25,0.5) 0%, rgba(78,52,39,0.5) 100%);
@@ -238,6 +247,7 @@
 			position:absolute;
 			top:106px;
 			left: 144px;
+			transition: background-image 500ms ease-out;
 			&:hover{
 				background-image: url("../img/link_hover.svg");
 			}
@@ -257,6 +267,7 @@
 			position:absolute;
 			top:106px;
 			left: 198px;
+			transition: background-image 500ms ease-out;
 			&:hover{
 				background-image: url("../img/lupa_hover.svg");
 			}
@@ -266,17 +277,20 @@
 		}
 	}
 	&:hover &-shadow{
-		display: block;
+		visibility: visible;
+		opacity: 1;
 	}
 	&:hover &-figure-txt{
 		background-color: #362f2d;
+		
 		&:before{
 			border: 20px solid transparent;
     	border-bottom: 10px solid #362f2d;
     	z-index: 2;
 		}
-		&-title{
+		&-title{	
 			color:#fff;
+			
 		}
 		&-text{
 			color:#c7b299;
