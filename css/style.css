@@ -1297,3 +1297,9 @@
   text-align: center;
   background-color: #363636;
 }
+.recent-post-box-item-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
