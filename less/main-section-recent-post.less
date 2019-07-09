@@ -1,0 +1,138 @@
+@recentpostgridwidth:1170px;
+
+.recent-post{
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding:80px;
+}
+.recent-post-wrap{
+	width: @recentpostgridwidth;
+	margin: 0 auto;
+	box-sizing:border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.recent-post{
+	&-title{
+		display: block;
+		box-sizing:border-box;
+		margin: 0 0 0 0;
+		font-size: 30px;
+  	font-family: "Raleway SemiBold";
+  	color: rgb(85, 85, 85);
+  	line-height: 1.2;
+  	text-align: center;
+	}
+	&-txt{
+		display: block;
+		box-sizing:border-box;
+		margin: 0 0 0 0;
+		font-size: 16px;
+  	font-family: "Montserrat";
+  	color: rgb(140, 140, 140);
+ 	 	line-height: 1.75;
+  	text-align: center;
+	}
+}
+
+.recent-post-box{
+	display: flex;
+	width: 100%;
+	box-sizing:border-box;
+	margin:  0 0 0 0;
+	flex-wrap: wrap;
+	&-item{
+		width: 370px;
+		margin: 0 15px 0 15px;
+		min-height: 395px
+	}
+	&-item:nth-child(1){
+		margin-left:0;
+	}
+	&-item:nth-last-child(1){
+		margin-right:0;
+	}
+}
+
+.recent-post-box-item{
+	&-preview{
+		box-sizing:border-box;
+		width: 100%;
+		min-height:220px;
+		position:relative;
+		&-img{
+			width: 370px;
+			height:220px;
+			background-color: #777777;
+		}
+		&-pagination{
+			display:flex;
+			justify-content: space-between;
+			align-items:center;
+			width: 100px;
+			position: absolute;
+			bottom: 24px;
+			left: 134px;
+			&-link{
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				border: 2px solid transparent;
+				background: #8f8e91 -webkit-linear-gradient(221deg, rgba(14,14,18, 0.4) 0%, rgba(45,45,53, 0.4) 100%);
+				background: #8f8e91 -o-linear-gradient(221deg, rgba(14,14,18, 0.4) 0%, rgba(45,45,53, 0.4) 100%);
+				background: #8f8e91 linear-gradient(311deg, rgba(14,14,18, 0.4) 0%, rgba(45,45,53, 0.4) 100%);
+				&:hover{
+					border: 2px solid #d3c1ad;
+					background:transparent;
+				} 
+			}	
+		}
+		&-date{
+			display: flex;
+			box-sizing:border-box;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items:center;
+			width: 50px;
+			min-height: 60px;
+			border-radius: 3px;
+			background-color:black;
+			overflow: hidden;
+			position: absolute;
+			top:20px;
+			left: 20px;
+			&-month{
+				display: block;
+				box-sizing:border-box;
+				padding: 0 0 0 0;	
+				width: 100%;
+				min-height: 25px;
+				font-size: 12px;
+  			font-family: "Roboto";
+  			color: rgb(255, 255, 255);
+  			line-height: 1.667;
+  			text-align: center;
+  			text-transform: capitalize;
+  			background-color: #252525;
+			}
+			&-date{
+				display: block;
+				box-sizing:border-box;
+				padding: 7px 0 0 0;	
+				min-height:35px;
+				width: 100%;
+				font-size: 24px;
+  			font-family: "Montserrat";
+  			color: rgb(255, 255, 255);
+  			line-height: 0.833;
+  			text-align: center;
+  			background-color: #363636;
+			}
+		}
+	}
+}
+
