@@ -2016,7 +2016,7 @@
   .latest-project-box {
     justify-content: center;
   }
-  .latest-project-box-item {
+  .latest-project-box-item:nth-child(n) {
     margin: 15px;
   }
   .video-presentation {
@@ -2061,7 +2061,7 @@
   .recent-post-box {
     justify-content: center;
   }
-  .recent-post-box-item {
+  .recent-post-box-item:nth-child(n) {
     margin: 15px;
   }
   .partners {
