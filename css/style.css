@@ -2016,6 +2016,9 @@
   .latest-project-box {
     justify-content: center;
   }
+  .latest-project-box-item {
+    margin: 15px;
+  }
   .video-presentation {
     width: 605px;
     background-image: url("../img/video_poster.jpg");
@@ -2057,6 +2060,9 @@
   }
   .recent-post-box {
     justify-content: center;
+  }
+  .recent-post-box-item {
+    margin: 15px;
   }
   .partners {
     padding: 10px;
