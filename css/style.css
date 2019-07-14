@@ -1742,7 +1742,7 @@
     margin: 0 0 0 24px;
   }
   .site-container {
-    margin: 0;
+    margin: 0 auto;
     min-height: 140px;
     width: 605px;
   }
