@@ -2016,7 +2016,7 @@
   .latest-project-box {
     justify-content: center;
   }
-  .latest-project-box-item:nth-child(n) {
+  .latest-project-box-item:nth-child(1n) {
     margin: 15px;
   }
   .video-presentation {
@@ -2061,7 +2061,7 @@
   .recent-post-box {
     justify-content: center;
   }
-  .recent-post-box-item:nth-child(n) {
+  .recent-post-box-item:nth-child(1n) {
     margin: 15px;
   }
   .partners {
@@ -2088,5 +2088,8 @@
   }
   .copi-wrap {
     width: 100%;
+  }
+  .copi-wrap-nav-bar {
+    justify-content: center;
   }
 }
