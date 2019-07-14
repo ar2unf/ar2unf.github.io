@@ -2025,6 +2025,13 @@
     min-height: 700px;
     width: 605px;
   }
+  .counter {
+    padding: 10px;
+    width: 605px;
+  }
+  .counter-item {
+    margin: 15px;
+  }
   .mobile {
     padding: 10px;
     width: 605px;
