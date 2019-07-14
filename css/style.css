@@ -2089,4 +2089,7 @@
   .copi-wrap {
     width: 100%;
   }
+  .copi-wrap-nav-bar {
+    justify-content: center;
+  }
 }
