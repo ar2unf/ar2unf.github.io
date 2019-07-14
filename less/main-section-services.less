@@ -1,0 +1,101 @@
+@widthgridservice:1170px;
+
+// /***********************
+
+.services-wrap{
+	width: @widthgridservice;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.services{
+	padding: 80px;
+	box-sizing: border-box;
+	&-item{
+		width: 270px;
+		box-sizing: border-box;
+		padding: 0 5px 0 5px;
+		min-height: 210px;
+		display: flex;
+		&-link{
+			display: block;
+			box-sizing: border-box;
+			width: 100%;
+			height: 100%;
+			padding: 5px;
+			text-decoration: none;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			&-ico{
+				box-sizing: border-box;
+				width: 52px;
+				height: 52px;
+				fill: #555555;
+				transition: fill 500ms ease;
+			}
+			&-title{
+				display: block;
+				box-sizing: border-box;
+				margin: 12px 0 0 0;
+  			font-size: 22px;
+  			font-family: "Raleway";
+ 			 	font-weight: 600;
+ 				color: rgb(85, 85, 85);
+  			line-height: 1.2;
+ 			 	text-align: center;
+ 			 	transition: color 500ms ease-out;
+			}
+			&-txt{
+				display: block;
+				box-sizing: border-box;
+  			font-size: 14px;
+  			font-family: "Montserrat";
+  			color: rgb(140, 140, 140);
+  			line-height: 1.714;
+  			text-align: center;
+			}
+			&:after{
+				content: "";
+				display: block;
+				margin: 13px 0 0 0;
+				width: 70px;
+				height: 3px;
+				background-color: #f1eee9;
+				transition: background-color 500ms ease-out;
+			}
+			&:hover &-title{
+				color: @clink_hover;
+				margin: 9px 0 0 0;
+			}
+			&:hover &-ico{
+				margin: 3px 0 0 0;
+				fill:  @clink_hover;
+				transition: fill 500ms ease;
+
+			}
+			&:hover:after{
+				background-color: @clink_hover;
+			}
+			&:active &-title{
+				color: @clink_active;
+			}
+			&:active &-ico{
+				fill: @clink_active;
+			}
+			&:active:after{
+				background-color: @clink_active;
+			}
+		}
+
+	}
+	&:after{
+		content: "";
+		width: 100%;
+		clear: both;
+	}
+}
+

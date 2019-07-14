@@ -1,0 +1,310 @@
+@bgc-header: #555556;
+@min-height: 1024px;
+@bg-image:"../img/bg_photo.jpg";
+@widthgrid-header:1170px;
+
+// /***********************
+
+.main-header{
+	width: 100%;
+	box-sizing: border-box;
+	min-height: @min-height;
+	background-color:@bgc-header;
+	background-image: url(@bg-image);
+	background-size: cover;
+	background-repeat:no-repeat;
+	padding:40px;
+	display: flex;
+	flex-direction:column;
+	/*position:relative;*/
+	&:after{
+		content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+	}
+}
+/*блок логотипа*/
+.main-header-wrap{
+	box-sizing:border-box;
+	width: @widthgrid-header;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	position:relative;
+	&-logo{
+		display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	width: 190px;
+  	/*min-height: 56px;*/
+  	text-decoration: none;
+  	margin: 0px 178px 0 0;
+
+  	&-img{
+  		display: block;
+  		fill: @clr_font;
+  		/*transition: fill 500ms ease-out;*/
+  	}
+  	&-txt{
+  		display: block;
+  		font-size: 34px;
+  		font-family: "Raleway";
+  		text-transform: capitalize;
+  		font-weight: 400;
+  		color: @clr_font;
+  		line-height: 1.2;
+  		text-align: right;
+  		/*transition: color 500ms ease-out;*/
+		}
+		&:hover &-img,{
+			fill: @clink_hover;
+		}
+		&:hover &-txt{
+			color: @clink_hover; 
+		}
+		&:active &-img,{
+			fill: @clink_active;
+		}
+		&:active &-txt{
+			color: @clink_active; 
+		}
+	}
+}
+/************/
+
+/* меню сайта*/
+.main-header-wrap-nav{
+	list-style-type: none;
+	margin: 0 130px 0 0 ;
+	padding:0;
+	min-width: 640px;
+	/*min-height: 56px;*/
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	&-item-link{
+		display: block;
+		width: 100%;
+		height:100%;
+		font-size: 14px;
+		font-weight: 400;
+  	font-family: "Montserrat";
+  	color: @clr_font;
+  	line-height: 1.2;
+  	text-align: left;
+  	text-decoration: none;
+  	&:hover{
+  		color: @clink_hover;
+  	}
+  	&:active{
+  		color: @clink_active;
+  	}
+	}
+}
+
+/************/
+/*кнопки поиска и корзина*/
+.main-header-wrap-btn-cart{
+	display: block;
+	width: 18px;
+	height: 24px;
+	padding:0;
+	background:none;
+	border:none;
+	background-image: url("../img/cart_ico.svg");
+	background-size:cover;
+	margin: 0 0 0 36px;
+	position:absolute;
+	left: 1065px;
+	&:hover{
+		background-image: url("../img/cart_ico_hover.svg");
+	}
+	&:active{
+		background-image: url("../img/cart_ico_active.svg");
+	}
+}
+.main-header-wrap-search[type="search"]{
+	/* позишн абсолют?*/
+	width: 24px;
+	height: 24px;
+	background:none;
+	border:none;
+	background-image: url("../img/search_ico.svg");
+	background-size:contain;
+	background-repeat:no-repeat;
+	position:absolute;
+	left: 1147px;
+	border: 3px solid transparent;
+	border-radius: 5px;
+	font-family: montserrat;
+	color: #fff;
+	font-size: 14px;
+	&:focus{
+		position:absolute;
+		box-sizing:border-box;
+		left: 1170px;
+		width: 200px;
+		transition: width 1s ease-out;
+		background-position: right;
+		border: 3px solid @clink_hover;
+		outline: none;
+
+	}
+	&:hover{
+		background-image: url("../img/search_ico_hover.svg");
+	}
+	&:active{
+		background-image: url("../img/search_ico_active.svg");
+	}
+}
+/************/
+/*текстовый слайдер*/
+.main-header-slid{
+	box-sizing:border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	min-height: 800px;
+	padding: 278px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items:center;
+	position:relative;
+	&-title-1{
+		box-sizing:border-box;
+		width: 600px;
+		margin: 0 0 0 0;
+		font-size: 36px;
+  	font-family: "Raleway";
+  	color: @clr_font;
+  	line-height: 1.2;
+  	font-weight: 500;
+  	text-align: center;
+	}
+	&-title-2{
+		box-sizing:border-box;
+		margin: 3px 0 0 0;
+		width: 600px;
+		font-size: 52px;
+  	font-family: "Raleway";
+  	color: @clr_font;
+  	font-weight: 800;
+  	line-height: 1.2;
+  	text-align: center;
+	}
+	&-txt{
+		box-sizing:border-box;
+		width: 600px;
+		margin: 12px 0 0 0;
+		font-size: 16px;
+  	font-family: "Montserrat";
+  	color: @clr_font;
+  	line-height: 1.5;
+  	text-align: center;
+	}
+	&-btn{
+		box-sizing:border-box;
+		width: 170px;
+		margin: 50px 0 0 0;
+		min-height: 54px;
+		text-decoration: none;
+		background-color: @clr-btn;
+		border-radius: 3px;
+  	box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	 border-bottom: 3px solid #736356;
+  	&-txt{
+  		box-sizing:border-box;
+  		display: block;
+  		min-height: 100%;
+  		min-width:100%;
+  		font-size: 14px;
+  		font-family: "Raleway";
+  		font-weight: 800;
+  		color: @clr_font;
+  		text-transform: uppercase;
+  		line-height: 1.643;
+  		text-align: center;
+  	}
+  	&:hover{
+  		background-color:  @clr-btn-hover;
+  		border-bottom: 3px solid #998675;
+  	}
+  	&:hover &-txt{
+  		color:#CCC;
+  	}
+  	&:active{
+  		background-color:  #000;
+  		color:#fff;
+  		border-bottom: 3px solid #ccc;
+  	}
+	}
+	&-arrow-back:after{
+		content: "";
+    width: 52px;
+    height: 52px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #dfff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 387px;
+    left: 122px;
+	}
+	&-arrow-back:hover:after{
+		border-color: @clink_hover;
+	}
+	&-arrow-back:active:after{
+		border-color: @clink_active;
+	}
+	&-arrow-front:before{
+		content: "";
+    width: 52px;
+    height: 52px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 387px;
+    right: 122px;
+
+	}
+	&-arrow-front:hover:before{
+		border-color: @clink_hover;
+	}
+	&-arrow-front:active:before{
+		border-color: @clink_active;
+	}
+}
+/*пагинация для слайдера*/
+.main-header-pagination{
+	display: flex;
+	margin: 46px 0 0 0; 
+	justify-content: space-between;
+	width: 100px;
+	align-self:center;
+	/*position:absolute;*/ // зачем использовать абслют?
+	/*top:98%;*/
+	/*left: 50%;*/
+	&-radio-btn{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	background: #8f8e91 -webkit-linear-gradient(311deg, rgba(14,14,18, 0.5) 0%, rgba(45,45,53, 0.5) 100%);
+	background: #8f8e91 -o-linear-gradient(311deg, rgba(14,14,18, 0.5) 0%, rgba(45,45,53, 0.5) 100%);
+	background: #8f8e91 linear-gradient(41deg, rgba(14,14,18, 0.5) 0%, rgba(45,45,53, 0.5) 100%);
+	
+	&:hover{
+		border: 2px solid #d3c1ad;
+		background:transparent;
+		} 
+	}
+}
+/************/
+

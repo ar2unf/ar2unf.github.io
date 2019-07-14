@@ -1,0 +1,59 @@
+@widthgrid:1230px;
+@bgc-section-realization-idea:#fbfaf8;
+/***секция реализации идей */
+
+.realization-idea-wrap{
+	width: @widthgrid;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+
+}
+.realization-idea{
+	width: 100%;
+	min-height: 100px;
+	padding: 80px;
+	padding-bottom:0;
+	box-sizing: border-box;
+	background-color: @bgc-section-realization-idea;
+	&-title{
+		display: block;
+		box-sizing: border-box;
+		margin: -4px 0 0 0;
+		width: 720px;
+		font-size: 30px;
+  	font-family: "raleway";
+  	font-weight: 600;
+  	color: rgb(85, 85, 85);
+  	line-height: 1.2;
+  	text-align: center;
+	}
+	&-txt{
+		display: block;
+		box-sizing: border-box;
+		margin: 16px 0 0 0;
+		width: 720px;
+		font-size: 16px;
+  	font-family: "montserrat";
+  	color: rgb(140, 140, 140);
+  	line-height: 1.75;
+  	text-align: center;
+	}
+	&-img{
+		box-sizing: border-box;
+		margin: 33px 0 0 0;
+		width: 100%;
+		min-height: 482px;
+		background-image: url("../img/browser-center.jpg"),
+											url("../img/browser-left.jpg"),
+											url("../img/browser-right.jpg");
+	background-repeat: no-repeat,no-repeat,no-repeat;
+	background-position: center, bottom left, bottom right;
+
+	}
+
+}
+/*****************************/
